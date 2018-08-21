@@ -1,0 +1,52 @@
+#theChat {
+    margin-bottom: 100px;
+    font-size: 1.15em;
+}
+
+#msgbox {
+	position:fixed;
+	bottom:0px;
+	width:92%;
+	margin:0 auto;
+}
+
+#m {
+	background: #0008;
+  color: white;
+}
+
+img {
+	height: 60px;
+	width: 60px;
+}
+
+ul {
+	margin-bottom: 100px;
+}
+
+li {
+  animation: slide-up 0.4s ease;
+}
+
+li:nth-child(odd) {
+  background-color: #0001
+}
+
+li:nth-child(even) {
+
+}
+
+li.myMessages {
+  color: blue;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

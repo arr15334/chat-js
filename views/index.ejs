@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Blog App
+        </title>
+        <link rel= "stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+        <link rel= "stylesheet" type="text/css" href="chat.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="chat.js"></script>
+    </head>
+    <body>
+        <div class="ui fixed inverted menu">
+            <div class="ui container">
+              <div class="header item"><i class="terminal icon"></i>SocketChat</div>
+            </div>
+
+        </div>
+        <!-- <form action="">
+          <input id="m" autocomplete="off" /><button>Send</button>
+        </form> -->
+
+        <form action="" id="theForm" class="ui form">
+    			<div class="ui inverted action input" id="msgbox">
+    			  <input placeholder="Escribe tu mensaje aqui..." type="text" id="m">
+    			  <button type="submit" class="ui secondary button"><i class="paper plane icon"></i>Enviar</button>
+    			</div>
+    		</form>
+        <ul id="theChat"></ul>
+    </body>
+</html>
