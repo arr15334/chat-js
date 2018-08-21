@@ -1,0 +1,35 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Chat using node and socket.io",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arr15334/chat-js.git"
+  },
+  "keywords": [
+    "chat",
+    "socket.io",
+    "node"
+  ],
+  "author": "Rodrigo Arriaza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arr15334/chat-js/issues"
+  },
+  "homepage": "https://github.com/arr15334/chat-js#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "qs": "^6.5.2",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
