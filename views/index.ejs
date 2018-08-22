@@ -20,13 +20,20 @@
         <!-- <form action="">
           <input id="m" autocomplete="off" /><button>Send</button>
         </form> -->
-
         <form action="" id="theForm" class="ui form">
     			<div class="ui inverted action input" id="msgbox">
     			  <input placeholder="Escribe tu mensaje aqui..." type="text" id="m">
     			  <button type="submit" class="ui secondary button"><i class="paper plane icon"></i>Enviar</button>
     			</div>
     		</form>
+        <select class="ui dropdown" id="quickReply" name="">
+          <option value="" disabled selected>Respuesta flash</option>
+          <option value="Gracias">Gracias</option>
+          <option value="Simon">Simon</option>
+          <option value="No">No</option>
+          <option value="Perdon bro">Perdon bro</option>
+          <option value="Ijuelachas">Ijuelachas</option>
+        </select>
         <ul id="theChat"></ul>
     </body>
 </html>

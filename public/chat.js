@@ -10,10 +10,13 @@ $(function(){
   $('form').submit(function () {
     console.log('asdf');
     console.log(socket);
-    socket.emit('new_message', {studentId: '15335', nickname: 'Sidd', msg: $('#m').val()});
+    socket.emit('new_message', {studentId: '15334', nickname: 'Sidd', msg: $('#m').val()});
     $('#m').val('');
     return false;
   });
+  $('#quickReply').change(function () {
+    socket.emit('new_message', {studentId: '15334', nickname: 'Sidd', msg: $('#quickReply').val()});
+  })
   socket.on('new_message', function(msg){
     console.log(msg);
     // $('#messages').append($('<li>').text(msg.text));

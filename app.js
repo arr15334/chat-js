@@ -42,11 +42,7 @@ io.on('connection', (socket) => {
       }
   )
     .then(() => {
-      io.sockets.emit('new_message', {
-        'student_id': studentId,
-        'nick': nick,
-        'text': msg
-      })
+      return null
     })
     .catch(err => {
       console.log(err);
